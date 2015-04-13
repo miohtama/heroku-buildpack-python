@@ -20,6 +20,9 @@ ENV_DIR=$3
 eval `ssh-agent`
 ssh-add $BUILD_DIR/deploy
 
+# add bitbucket.org to allowed hosts
+ssh -o StrictHostKeyChecking=no git@bitbucket.org uptime
+
 CACHED_DIRS=".heroku"
 
 # Static configurations for virtualenv caches.
