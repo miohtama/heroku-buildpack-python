@@ -28,6 +28,9 @@ set -e
 echo "Hosts are"
 cat ~/.ssh/known_hosts
 
+ls /app/.ssh
+cat /app/.ssh/config
+
 CACHED_DIRS=".heroku"
 
 # Static configurations for virtualenv caches.
