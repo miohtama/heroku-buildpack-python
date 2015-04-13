@@ -25,6 +25,9 @@ set +e
 ssh -o StrictHostKeyChecking=no git@bitbucket.org uptime
 set -e
 
+echo "Hosts are"
+cat ~/.ssh/known_hosts
+
 CACHED_DIRS=".heroku"
 
 # Static configurations for virtualenv caches.
