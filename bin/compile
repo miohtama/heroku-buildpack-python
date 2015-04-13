@@ -29,7 +29,9 @@ echo "Hosts are"
 cat ~/.ssh/known_hosts
 
 ls /app/.ssh
-cat /app/.ssh/config
+
+echo "ASDFASF"
+cat /app/.ssh/known_hosts
 
 CACHED_DIRS=".heroku"
 
